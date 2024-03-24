@@ -16,7 +16,7 @@ html {
 
 body {
     display: grid;
-    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-columns: 20% 80%;
 }
 
 /* SIDE BAR */
@@ -46,4 +46,123 @@ body {
 
 #side-bar .buttons-container img{
     transform: scale(0.5);
+}
+
+/* HEADER */
+#header {
+    padding: 2.5vh 2.5vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* TOP HEADER */
+#top-header {
+    /* background-color: #1992d4; */
+    display: grid;
+    grid-template-columns: 60% 30%;
+    gap: 8vw;
+}
+
+#search-bar { 
+    /* background-color: #1992d4; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#search-bar img {
+    height: max(3.5vh, 25px);
+    /* margin-left: 7vw; */
+}
+
+#search-bar input {
+    background-color: #e2e8f0;
+    height: max(4vh, 30px);
+    width: 90%;
+    border-radius: 18px;
+    border: none;
+    padding: 0.25em 1em;
+}
+
+#top-profile {
+    /* background-color: #1992d4; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+#top-profile h3 {
+    font-size: 1.5em;
+}
+
+#bell-icon{
+    height: max(3.5vh, 25px);
+}
+
+.pfp img {
+    transform: scale(0.1);
+}
+
+.pfp {
+    /* position: relative; */
+    width: 60px; 
+    height: 60px; 
+    overflow: hidden; 
+    border-radius: 50%;
+
+    display: grid;
+    place-content: center;
+}
+
+/* MAIN HEADER */
+#main-header {
+    /* background-color: #1992d4; */
+    /* padding: 0 2.5vw; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left-part {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#left-part .pfp {
+    width: 100px;
+    height: 100px;
+}
+
+#left-part .pfp img {
+    transform: scale(0.15);
+}
+
+#pfp-text h4{
+    margin-bottom: 0.5em;
+}
+
+#right-part {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+#right-part button {
+    width: 6vw;
+    height: 2.5vw;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #1992d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 32px;
 }
