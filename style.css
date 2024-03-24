@@ -20,6 +20,10 @@ body {
     min-height: 100vh;
 }
 
+p {
+    color: #bdbdbd;
+}
+
 /* SIDE BAR */
 #side-bar {
     padding: 1em;
@@ -191,12 +195,12 @@ body {
 
 /* PROJECT SECTION */
 #project-section h2 {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 200px;
     gap: 1em;
 }
@@ -204,7 +208,7 @@ body {
 .project {
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 1rem;
+    padding: 1.5rem;
     overflow: hidden;
 
     position: relative;
@@ -235,6 +239,92 @@ body {
 }
 
 /* ANNOUNCEMENTS */
-#announcements h2 {
-    
+#announcements {
+    margin-bottom: 2rem;
 }
+
+#announcements h2 {
+    margin-bottom: 1rem;
+}
+
+#news {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 90%;
+}
+
+.news-element {
+    padding: 1rem;
+}
+
+.news-element:nth-of-type(1),
+.news-element:nth-of-type(2) {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.news-element h3 {
+    margin-bottom: 0.3rem;
+}
+
+/* TRENDING */
+#trending h2 {
+    margin-bottom: 1rem;
+}
+
+#trending-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 90%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.trending-element {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.text-container .trending-name{
+    align-self: flex-start;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#avatar1 {
+    background-image: url("./img/pfp_2.webp");
+}
+
+#avatar2 {
+    background-image: url("./img/pfp_1.webp");
+}
+
+#avatar3 {
+    background-image: url("./img/pfp_3.jpg");
+}
+
+#avatar4 {
+    background-image: url("./img/pfp_4.webp");
+}
+
