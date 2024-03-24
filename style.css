@@ -1,0 +1,49 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* MAIN STYLE */
+html {
+    font-family: "Tauri", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+}
+
+/* SIDE BAR */
+#side-bar {
+    padding: 1em;
+    background-color: #1992d4;
+    color: #ffffff;
+}
+
+.white-svg {
+    filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(42deg) brightness(105%) contrast(107%);
+}
+
+.side-bar-element {
+    margin-bottom: 3vh;
+}
+
+.side-bar-container {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    align-items: center;
+}
+
+#side-bar .buttons-container h3{
+    font-size: 1.5em;
+}
+
+#side-bar .buttons-container img{
+    transform: scale(0.5);
+}
