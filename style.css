@@ -222,9 +222,12 @@ p {
     margin-bottom: 0.3em;
 }
 
-.project img {
+.project-container {
     margin-top: auto;
     align-self: flex-end;
+}
+
+.project-container img {
     height: 4vh;
 }
 
