@@ -25,6 +25,11 @@ p {
 }
 
 /* SIDE BAR */
+#close-menu-btn {
+    display: none;
+    transform: scale(0.2);
+}
+
 #side-bar {
     padding: 1em;
     background-color: #1992d4;
@@ -37,6 +42,10 @@ p {
 
 .side-bar-element {
     margin-bottom: 3vh;
+}
+
+#side-bar-header .side-bar-element img {
+    transform: scale(10);
 }
 
 .side-bar-container {
@@ -72,8 +81,14 @@ p {
     display: grid;
     grid-template-columns: 60% 30%;
     gap: 8vw;
+    align-items: center;
 
     margin-bottom: 2em;
+}
+
+#menu-btn {
+    display: none;
+    height: max(3.5vh, 25px);
 }
 
 #search-bar { 
@@ -139,6 +154,7 @@ p {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     /* box-shadow: 0 0px 12px 4px rgb(0, 0, 0, 0.4); */
 }
 
@@ -172,8 +188,8 @@ p {
 }
 
 #right-part button {
-    width: 6vw;
-    height: 2.5vw;
+    width: min(30vw, 100px);
+    height: min(10vw, 40px);
     font-size: 1.2em;
     font-weight: bold;
     background-color: #1992d4;
@@ -331,3 +347,65 @@ p {
     background-image: url("./img/pfp_4.webp");
 }
 
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    body {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #side-bar {
+        width: 40vw;
+        margin-left: -40vw;
+    }
+
+    #main-content {
+        width: 100vw;
+    }
+
+    #top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    #search-bar {
+        margin-left: -10vw;
+    }
+
+    #top-profile {
+        display: none;
+    }
+
+    #side-bar {
+        position: fixed;
+        height: 100vh;
+        z-index: 2;
+    }
+
+    #close-menu-btn {
+        display: inline-block;
+    }
+
+    #side-bar-header {
+        position: relative;
+    }
+
+    #side-bar-header::before {
+        filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(42deg) brightness(105%) contrast(107%);
+        position: absolute;
+        content: url("./img/close-icon.svg");
+        top: 10%;
+        bottom: 0;
+        left: 80%;
+        right: 0;
+    }
+}
